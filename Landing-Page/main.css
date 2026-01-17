@@ -1,0 +1,617 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: auto;
+}
+
+.main {
+    background-color: #fa005c;
+    height: 100%;
+    width: auto;
+    padding: 60px 150px;
+    color: white;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #decccc;
+    font-size: 15px;
+    font-weight: 300;
+    transition: background-color 0.2s;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 60px;
+    text-wrap: wrap;
+    font-size: clamp(30px, 7vh, 8vh);
+    font-size: 7vh;
+
+}
+
+.nav-text {
+    color: white;
+    font-size: xx-large;
+    font-weight: 400;
+
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.navicon {
+    display: none;
+}
+
+
+.btn1 {
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    padding: 6px 15px;
+    border-width: 1px;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+
+    .iosvg {
+        fill: white;
+        width: 17px;
+        height: 20px;
+    }
+}
+
+
+
+.btn2 {
+    background-color: #fa005c;
+    border-radius: 4px;
+    border-color: white;
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    padding: 6px 15px;
+    margin-left: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    transition: background-color 0.2s;
+
+    .playsvg {
+        fill: white;
+        width: 17px;
+        height: 20px;
+    }
+}
+
+
+.btn2:hover {
+    background-color: white;
+    color: black;
+
+    .playsvg {
+        fill: black;
+    }
+}
+
+.btn3 {
+    background-color: white;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 0px;
+    color: black;
+    padding: 6px 15px;
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+
+    .playsvg {
+        fill: black;
+        width: 17px;
+        height: 20px;
+    }
+}
+
+.btn-part {
+    margin-top: 20px;
+    display: flex;
+
+
+}
+
+.main-info {
+    display: flex;
+    margin-top: 90px;
+    justify-content: space-between;
+    width: auto;
+    /* gap: 130px; */
+    align-items: flex-start;
+}
+
+.photo {
+    transform: translate(-150px) rotate(25deg);
+    /* transition: 2s; */
+}
+
+/* .photo:hover{
+     transform: none;
+
+} */
+
+@media (max-width: 1200px) {
+    .main {
+        padding: 50px 115px 40px 75px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 30px;
+        line-height: 30px;
+        margin-left: auto;
+    }
+
+    .photo {
+
+        transform: none;
+        width: 301px;
+    }
+
+    .links {
+        width: 387px;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-info {
+        margin-top: 56px;
+        gap: 130px;
+    }
+
+
+    .btn-part {
+        padding: 26px;
+        width: 100%;
+        display: grid;
+        gap: 35px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .btn1,
+    .btn2,
+    .btn3 {
+        padding: 10px 29px;
+        font-size: 128%;
+    }
+
+    button>svg {
+        width: 23px;
+        height: 30px;
+    }
+
+    .nav-text {
+        color: white;
+        font-size: 50px;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+.newsvg {
+    width: 50px;
+    height: 45px;
+    fill: #e87933;
+}
+
+
+.normal-cards {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 66px;
+    padding: 115px;
+
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+}
+
+.card-text {
+    font-size: 25px;
+    font-weight: 900;
+
+}
+
+.card-text2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #948d8d
+}
+
+.parent {
+    background-color: #f06832;
+    width: auto;
+    padding: 70px 60px;
+
+
+}
+
+@media (max-width:1200px) {
+    .parent {
+        height: auto;
+        padding: 70px 20px;
+    }
+}
+
+.swiper {
+    width: auto;
+    color: white;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20%;
+}
+
+
+.swiper-button-next {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 512'%3E%3Cpath fill='%23ffffff' d='M247.1 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L179.2 256 41.9 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z'/%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat;
+    top: 102px !important;
+}
+
+.swiper-button-prev {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 512'%3E%3Cpath fill='%23ffffff' d='M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z'/%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat;
+    top: 102px !important;
+}
+
+.swiper-button-prev svg {
+    display: none;
+}
+
+.swiper-button-next svg {
+    display: none;
+}
+
+.upper-text {
+    font-size: 30px;
+    color: white;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 52px;
+}
+
+.clt-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 19px;
+}
+
+.client-img {
+    border-radius: calc(infinity * 1px);
+    object-fit: cover;
+    width: 100%;
+    max-width: 70px;
+    height: auto;
+}
+
+.client-name {
+    font-style: italic;
+}
+
+
+.image-line {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+.cmpny-image {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+.whole-card {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(218, 208, 208);
+    width: 380px;
+
+}
+
+.inner-div {
+    background-color: #f1eded;
+    padding: 10px 4px;
+    border-bottom: 1px;
+    border-bottom-color: rgb(202, 198, 198);
+    border-bottom-style: solid;
+
+}
+
+.inner-div>p {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.price-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.inner-data {
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.lists {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+li {
+    margin-top: 16px;
+}
+
+.price {
+    margin: 0;
+}
+
+.price-btn {
+    width: 100%;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-top: 20px;
+}
+
+.price-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.find-part {
+    background-color: #fa005c;
+    padding: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+
+.find-part>p {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 900;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    height: 30vh;
+}
+
+.newtext {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.text1 {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 9px;
+}
+
+.text2 {
+    text-align: center;
+    font-weight: 500;
+}
+
+.cp-right {
+    margin-top: 10px;
+    font-weight: 300;
+    width: 50vw;
+    color: #735f5f;
+}
+
+.btn-part2 {
+    display: flex;
+
+}
+
+.mySwiper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media(max-width:980px) {
+
+    .main {
+        padding: 50px;
+    }
+
+    .links {
+        display: none
+    }
+
+    .navicon {
+        display: inline;
+        padding: 11px;
+        height: 27px;
+        width: 32px;
+        border-radius: 9px;
+        border: 2px solid;
+        border-color: bisque;
+    }
+
+    .h1 {
+        text-wrap: nowrap;
+        font-size: 28px
+    }
+
+    .main-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px
+    }
+
+    .photo {
+
+        width: 400px;
+    }
+
+    .btn-part {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px
+    }
+
+    .normal-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 49px;
+
+    }
+
+    .newsvg {
+        width: 113px;
+        height: 61px;
+        fill: #e87933;
+    }
+
+    .upper-text {
+
+        overflow-wrap: anywhere;
+        text-align: center;
+
+
+
+    }
+
+    .parent {
+        padding: 61px 65px;
+        ;
+    }
+
+    .cmpny-image {
+        width: 130px;
+    }
+
+    .price-section {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text1 {
+        font-size: 24px;
+    }
+
+    .price {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 900;
+        margin-bottom: -10px;
+
+    }
+
+    .price-btn {
+        font-size: 20px;
+    }
+
+    .find-part {
+           padding: 62px 157px;
+}
+.find-part>p{
+    font-size: 24px;
+}
+}
