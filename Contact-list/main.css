@@ -1,0 +1,33 @@
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 98vh;
+}
+
+.form-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+
+}
+
+#contact-form{
+        padding: 20px;
+    border: 20px solid black;
+box-shadow: 20px;
+
+}
+
+.numdetailspart {
+    display: flex;
+}
+
+.output-part{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    gap: 20px;
+}

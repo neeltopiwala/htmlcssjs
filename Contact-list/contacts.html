@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>contacts</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="form-part">
+            <h1>Add Contact details</h1>
+            <form id="contact-form">
+                <label for="name">Contact Name:</label>
+                <input id="name" type="text" placeholder="Enter Contact Name">
+                <p id="pargarph1"></p>
+                <div class="numdetailspart">
+                    <label for="Contact-Number">Contact Number:</label>
+                    <select name="prefix" id="prefix">
+                        <option value="+91">India(+91)</option>
+                        <option value="+1">U.S.A(+1)</option>
+                    </select>
+                    <input id="Contact-Number" type="number" placeholder="Enter Contact Number">
+                </div>
+                <p id="pargarph2"></p>
+                <button type="submit" id="savebtn"> Add </button>
+                <script src="contact.js" type="module"></script>
+            </form>
+        </div>
+
+        <div class="output-part">
+            <div id="search-div">
+                <input type="text" placeholder="search Contact Name">
+                <button id="searchbtn"> Search </button>
+            </div>
+            <div>
+            <select name="sorting" id="sorting" placeholder="enter">
+                <option value="NONE">NONE</option>
+                <option value="ASC">ASC</option>
+                <option value="DESC">DESC</option>
+            </select>
+            </div>
+            <ul>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
